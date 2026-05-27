@@ -27,11 +27,11 @@
 
 /* Premium Dark Mode System Overrides */
 .dark {
-  --background: #130f0d;
-  --surface: #1d1613;
-  --surface-alt: #261e1a;
-  --text-dark: #f5eee8;
-  --text-muted: #a3968e;
+  --background: #1f1b18;
+  --surface: #231e1a;
+  --surface-alt: #2a2420;
+  --text-dark: #f6f0e8;
+  --text-muted: #c4bcaa;
   --border: rgba(154, 144, 136, 0.2);
   --error-bg: #2d1614;
 }
