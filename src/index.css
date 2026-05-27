@@ -239,8 +239,8 @@ body {
 }
 
 /* Icons / Action Controls in Nav */
-.nav-actions {
-  display: flex;
+.navbar-mobile-controls {
+  display: none;
   align-items: center;
   gap: 16px;
 }
@@ -277,6 +277,9 @@ body {
 @media (max-width: 768px) {
   .navbar-links {
     display: none;
+  }
+  .navbar-mobile-controls {
+    display: flex;
   }
   .mobile-menu-btn {
     display: flex;

@@ -378,7 +378,7 @@ export default function App() {
                     </div>
 
                     {/* Mobile menu controls */}
-                    <div className="nav-actions md:hidden flex">
+                    <div className="navbar-mobile-controls">
                         <button 
                             onClick={toggleTheme}
                             className="theme-toggle-btn" 
