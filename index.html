@@ -36,33 +36,33 @@
                         "on-primary": "#ffffff",
                         "primary-container": "#e08850",
                         "on-tertiary-fixed-variant": "#6e3030",
-                        "background": "var(--color-bg)",
+                        "background": "#faf5ee",
                         "surface-tint": "#c2652a",
                         "primary-fixed-dim": "#f0a878",
-                        "surface-bright": "var(--color-bg)",
+                        "surface-bright": "#faf5ee",
                         "secondary": "#78706a",
                         "on-error": "#ffffff",
-                        "surface-container-highest": "var(--color-surface-container-highest)",
+                        "surface-container-highest": "#e6e0d6",
                         "on-primary-fixed": "#401a08",
-                        "surface": "var(--color-surface)",
-                        "on-surface-variant": "var(--color-on-surface-variant)",
-                        "on-background": "var(--color-on-surface)",
-                        "surface-container-low": "var(--color-surface-container-low)",
+                        "surface": "#faf5ee",
+                        "on-surface-variant": "#605850",
+                        "on-background": "#3a302a",
+                        "surface-container-low": "#f6f0e8",
                         "primary": "#c2652a",
                         "on-tertiary-fixed": "#2e1515",
                         "tertiary-fixed": "#fce0e0",
-                        "surface-variant": "var(--color-surface-variant)",
-                        "surface-dim": "var(--color-surface-dim)",
-                        "surface-container-lowest": "var(--color-surface-container-lowest)",
+                        "surface-variant": "#ece6dc",
+                        "surface-dim": "#dcd6cc",
+                        "surface-container-lowest": "#ffffff",
                         "secondary-container": "#eae2da",
-                        "surface-container-high": "var(--color-surface-container-high)",
-                        "surface-container": "var(--color-surface-container)",
+                        "surface-container-high": "#ece6dc",
+                        "surface-container": "#f2ece4",
                         "on-error-container": "#7a1a10",
                         "tertiary-container": "#d47070",
                         "on-primary-container": "#fbe8d8",
                         "secondary-fixed-dim": "#cec6be",
                         "inverse-primary": "#f0a878",
-                        "on-surface": "var(--color-on-surface)",
+                        "on-surface": "#3a302a",
                         "on-secondary-fixed-variant": "#504840",
                         "outline-variant": "#d8d0c8",
                         "secondary-fixed": "#eae2da"
@@ -83,55 +83,27 @@
             }
         }
     </script>
-    <style type="text/tailwindcss">
-        @layer utilities {
-            .glass-effect {
-                @apply bg-surface/80 backdrop-blur-md;
-            }
-            .ambient-shadow {
-                box-shadow: 0 10px 30px rgba(194, 101, 42, 0.08);
-            }
-            .interactive-glow:hover {
-                box-shadow: 0 0 0 2px #c2652a;
-            }
-            .text-balance {
-                text-wrap: balance;
-            }
-            .animate-fade-in-up {
-                animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            }
-            .animate-scale-up {
-                animation: scaleUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            }
+    <style>
+        /* Pure, Native CSS for robust rendering without dynamic compiler overrides */
+        .glass-effect {
+            background-color: rgba(250, 245, 238, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
         
-        :root {
-            --color-bg: #faf5ee;
-            --color-surface: #faf5ee;
-            --color-on-surface: #3a302a;
-            --color-on-surface-variant: #605850;
-            --color-surface-container: #f2ece4;
-            --color-surface-container-low: #f6f0e8;
-            --color-surface-container-lowest: #ffffff;
-            --color-surface-container-highest: #e6e0d6;
-            --color-surface-variant: #ece6dc;
-            --color-surface-dim: #dcd6cc;
-            --scroll-percent: 0%;
+        .ambient-shadow {
+            box-shadow: 0 10px 30px rgba(194, 101, 42, 0.08);
+        }
+        
+        .interactive-glow:hover {
+            box-shadow: 0 0 0 2px #c2652a;
+        }
+        
+        .text-balance {
+            text-wrap: balance;
         }
 
-        .dark {
-            --color-bg: #15100d;
-            --color-surface: #1d1613;
-            --color-on-surface: #f4eae2;
-            --color-on-surface-variant: #9b8f85;
-            --color-surface-container: #261e1a;
-            --color-surface-container-low: #211915;
-            --color-surface-container-lowest: #140f0c;
-            --color-surface-container-highest: #332822;
-            --color-surface-variant: #2b211b;
-            --color-surface-dim: #18120f;
-        }
-
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -164,23 +136,107 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .animate-scale-up {
+            animation: scaleUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
         
         .material-symbols-outlined {
-          font-variation-settings:
-          'FILL' 0,
-          'wght' 300,
-          'GRAD' 0,
-          'opsz' 24
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
+        
         .material-symbols-outlined.fill {
             font-variation-settings: 'FILL' 1;
+        }
+
+        /* ==========================================
+           Premium Dark Mode System Overrides
+           ========================================== */
+        .dark body {
+            background-color: #130f0d !important;
+            color: #f5eee8 !important;
+        }
+        
+        .dark .glass-effect {
+            background-color: rgba(29, 22, 19, 0.8) !important;
+            border-color: rgba(154, 144, 136, 0.15) !important;
+        }
+        
+        .dark .bg-surface {
+            background-color: #1d1613 !important;
+        }
+        
+        .dark .text-on-surface {
+            color: #f5eee8 !important;
+        }
+        
+        .dark .text-on-surface-variant {
+            color: #a3968e !important;
+        }
+        
+        .dark .bg-surface-container {
+            background-color: #261e1a !important;
+        }
+        
+        .dark .bg-surface-container-lowest {
+            background-color: #130f0d !important;
+        }
+        
+        .dark .bg-surface-container-low {
+            background-color: #1e1815 !important;
+        }
+        
+        .dark .bg-surface-container-highest {
+            background-color: #332822 !important;
+        }
+        
+        .dark .bg-surface-variant {
+            background-color: #2b211c !important;
+        }
+
+        .dark .border-outline-variant\/30,
+        .dark .border-surface-variant\/30 {
+            border-color: rgba(154, 144, 136, 0.15) !important;
+        }
+
+        .dark .border-outline-variant\/20,
+        .dark .border-surface-variant\/20 {
+            border-color: rgba(154, 144, 136, 0.1) !important;
+        }
+        
+        .dark .bg-surface-container-lowest\/80 {
+            background-color: rgba(19, 15, 13, 0.8) !important;
+        }
+
+        .dark .ambient-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+        }
+
+        .dark .bg-primary-fixed {
+            background-color: #382c25 !important;
+        }
+
+        .dark .text-on-primary-fixed-variant {
+            color: #fbe8d8 !important;
+        }
+        
+        .dark input, 
+        .dark select, 
+        .dark textarea {
+            background-color: #130f0d !important;
+            color: #f5eee8 !important;
+            border-color: rgba(154, 144, 136, 0.3) !important;
         }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body text-base antialiased selection:bg-primary-container selection:text-on-primary-container transition-colors duration-300">
 
 <!-- Scroll Progress Bar -->
-<div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-primary z-[60] transition-all duration-100" style="width: var(--scroll-percent)"></div>
+<div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-primary z-[60] transition-all duration-100" style="width: 0%;"></div>
 
 <!-- Top Navigation -->
 <nav class="fixed top-0 w-full z-50 glass-effect border-b border-surface-variant/30 transition-all duration-300" id="main-nav">
@@ -439,7 +495,7 @@
 <!-- Skills Section -->
 <section class="py-24 md:py-32 px-5 md:px-16 bg-surface reveal-on-scroll" id="skills">
     <div class="max-w-7xl mx-auto text-center">
-        <h2 class="font-headline text-3xl md:text-5xl font-semibold text-primary mb-12 animate-pulse">Core Capabilities</h2>
+        <h2 class="font-headline text-3xl md:text-5xl font-semibold text-primary mb-12">Core Capabilities</h2>
         <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             <span class="px-5 py-3 border border-outline-variant/50 rounded-full font-label text-xs uppercase tracking-widest text-on-surface-variant hover:border-primary hover:text-primary hover:bg-surface-container transition-all duration-300 hover:scale-[1.05] cursor-default">Full Responsive Website Development</span>
             <span class="px-5 py-3 border border-outline-variant/50 rounded-full font-label text-xs uppercase tracking-widest text-on-surface-variant hover:border-primary hover:text-primary hover:bg-surface-container transition-all duration-300 hover:scale-[1.05] cursor-default">Premium Website Design</span>
