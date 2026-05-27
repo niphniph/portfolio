@@ -4,9 +4,9 @@
 
 @layer utilities {
   .glass-effect {
-    background-color: rgba(250, 245, 238, 0.8);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(250, 245, 238, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
   }
   
   .ambient-shadow {
@@ -81,8 +81,10 @@
 }
 
 .dark .glass-effect {
-  background-color: rgba(29, 22, 19, 0.8) !important;
+  background-color: rgba(29, 22, 19, 0.82) !important;
   border-color: rgba(154, 144, 136, 0.15) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
 }
 
 .dark .bg-surface {
