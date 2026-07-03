@@ -73,6 +73,20 @@ const projectsData = {
         ],
         img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBD58eXv4w8GWF8UmpW77CTZfg-hlHbEohJuD1mUZPTZmFvuffekiX7NzKpIlKYJERylnTm2B_fiFFRCAu8rXcZlogAQn9Gh1A1geYYa8GEaSYeMD1pkjudr7hxeO8S2qmxtnW3HoVAByQTuDKFKGXZF5-Tf41WxqP0LLDLZqj_A5ZxiyJrmhiQBn8VZdjCWeHTrtno4mZRg5IxQ9bcQZQOBueq2Rw7QsrjfOjsvdwH9o1JfU56BKQaMO5qom0_K_a0oflzsqLYjp4",
         link: "https://nine13.site/cleaningservice"
+    },
+    ninokvariani2: {
+        title: "Georgian Institute of Psychosynthesis",
+        tagline: "Holistic Growth & Psychological Research Portal",
+        desc: "The Georgian Institute of Psychosynthesis (GIP) is an educational and research platform dedicated to holistic personal growth and professional psychological development. The portal serves as a bridge between ancient psycho-spiritual traditions and modern therapeutic practices, featuring bilingual content, structured academic programs, and international trainer showcases.",
+        tech: ["HTML5 / CSS3", "Vanilla CSS", "Vanilla JavaScript", "Responsive Grid Layouts", "Bilingual Localization"],
+        features: [
+            "Comprehensive academic & professional training catalogs",
+            "Interactive international trainer spotlight modules",
+            "Bilingual localization framework (Georgian / English)",
+            "Optimized resources & event registration channels"
+        ],
+        img: "/ninokvariani2.png",
+        link: "https://nine13.site/ninokvariani2"
     }
 };
 
@@ -535,9 +549,14 @@ export default function App() {
                                     <div className="dot dot-green"></div>
                                 </div>
                             </div>
-                            <div className="project-image-box">
+                            <a 
+                                href="https://nine13.site/gymwave" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="project-image-box"
+                            >
                                 <img alt="GymWave Website Preview" className="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrqswMIUvQxwybMaFIB2xzMyZMbfE6PZ5nu9RKyR8cPKEPhaa7acXlHSEqd92CiLeD59hr_VcgJM5zww9HTOmYSFIb7fAOucqQoXncjGWD3p53pTka_JTmGknnSWQ3m-7QX3HpDAoy4kfs5DSHR3Ql4stouSyi8cn8fWM-ROMC9O_peIpReVudOM5cGOt2sWmqsigvy8BYDl1GnqqsysnXQxMeAaewtdN1J2qZloXNFbX5WLnY53hvN78BMwwXd9ivzDOo1UgHSdA"/>
-                            </div>
+                            </a>
                             <div className="project-details">
                                 <h3 className="project-card-title">GymWave</h3>
                                 <p className="project-card-desc">Premium event website designed to drive registrations with high-energy visuals and seamless mobile responsiveness.</p>
@@ -569,9 +588,14 @@ export default function App() {
                                     <div className="dot dot-green"></div>
                                 </div>
                             </div>
-                            <div className="project-image-box">
+                            <a 
+                                href="https://nine13.site/diet" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="project-image-box"
+                            >
                                 <img alt="NutriPlan Global Interface Preview" className="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfu2gjjEoe6ikVw2LC8rh8CJCA914vrNFR-Q9ukzKUUX9BocktbyzD64Ryo8L-Z6H6C8h3ktWNOGOLLCpJOHwGl_aP8bjjaNIA1Or3aumyOLKUxzUbrm-kfZTU2Y2Y53SBPHtqqXs7NkGWR45AalXQ7WtjjOoRkjTQ6eC5ACeGqdzykvr7s2o1lyFnznxrZJn13QUXQ8melszd8gwZxEnAU3XYbsEwCwb2SC9Z7C4wp6CjpwqlK3QmgRnUOGV6l-zXA714T1ZrC58"/>
-                            </div>
+                            </a>
                             <div className="project-details">
                                 <h3 className="project-card-title">NutriPlan Global</h3>
                                 <p className="project-card-desc">Health-focused digital product platform featuring clean, readable typography and a trustworthy, professional aesthetic.</p>
@@ -603,9 +627,14 @@ export default function App() {
                                     <div className="dot dot-green"></div>
                                 </div>
                             </div>
-                            <div className="project-image-box">
+                            <a 
+                                href="https://nine13.site/premiumbarbershop" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="project-image-box"
+                            >
                                 <img alt="Premium Barbershop Website Preview" className="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmmrEs8MEerrEQW7G8pp1TJvx_l3E29gaEmFU2IgXIND6-0z-NHTSgh4WrBta59BtqG_hSxatKXIyxZg7UY8zo1qDIR_5CP1zhI3BORwlAgYUlP53UtgCAVxLsjmXSsa5SonKXV4CGf4VzXrMv1TnrpfrdCZYpEpSQ7dw7T6YOr9pTtO981Kyy833pU8KZeq0lBcI1_6fMEYC0i8AZwBaRau-HB_-jW0KAx4-6JrOS0tN4mgynEdJMcQZU2ZowoHHvajcmDwVeYJE"/>
-                            </div>
+                            </a>
                             <div className="project-details">
                                 <h3 className="project-card-title">Premium Barbershop</h3>
                                 <p className="project-card-desc">Luxury barbershop website designed to convey exclusivity and simplify the booking process for high-end clientele.</p>
@@ -637,9 +666,14 @@ export default function App() {
                                     <div className="dot dot-green"></div>
                                 </div>
                             </div>
-                            <div className="project-image-box">
+                            <a 
+                                href="https://nine13.site/bottleorder" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="project-image-box"
+                            >
                                 <img alt="Interactive game website interface" className="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyQZFhaOA2uL_uen1rDb-zM6HZHyTaoVUyiq7K2Dtvw0tvFFRq6d2PK5vzQJWj1wh8TRkbCYqSrR4ERSAne82CxqzA2tuSL2df5xiKPoUdtna-FN4ngHdKX9XnPl8Qf3qnAtHqObGY7iB414aybrRLxpISQnNgXtqGX0ifBGy5q4zn0nRo6s_HcyrDOyj7X7HjKIkWmMS2P4cMeqyNxC3YUORjPlzBi4qNzyJYGXOY_Mcc0dXofLpwNiqktLjJskE1F0geWhFLLGo"/>
-                            </div>
+                            </a>
                             <div className="project-details">
                                 <h3 className="project-card-title">Bottleorder</h3>
                                 <p className="project-card-desc">Interactive game website featuring dynamic potion mixing animations and responsive layout across all device types.</p>
@@ -663,7 +697,7 @@ export default function App() {
                         </div>
                         
                         {/* Project 5: Cleaning Service */}
-                        <div className="project-card project-card-centered reveal-on-scroll">
+                        <div className="project-card reveal-on-scroll">
                             <div className="project-bar">
                                 <div className="dots">
                                     <div className="dot dot-red"></div>
@@ -671,13 +705,18 @@ export default function App() {
                                     <div className="dot dot-green"></div>
                                 </div>
                             </div>
-                            <div className="project-image-box">
+                            <a 
+                                href="https://nine13.site/cleaningservice" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="project-image-box"
+                            >
                                 <img alt="Cleaning Service Website Preview" className="project-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD58eXv4w8GWF8UmpW77CTZfg-hlHbEohJuD1mUZPTZmFvuffekiX7NzKpIlKYJERylnTm2B_fiFFRCAu8rXcZlogAQn9Gh1A1geYYa8GEaSYeMD1pkjudr7hxeO8S2qmxtnW3HoVAByQTuDKFKGXZF5-Tf41WxqP0LLDLZqj_A5ZxiyJrmhiQBn8VZdjCWeHTrtno4mZRg5IxQ9bcQZQOBueq2Rw7QsrjfOjsvdwH9o1JfU56BKQaMO5qom0_K_a0oflzsqLYjp4"/>
-                            </div>
-                            <div className="project-details text-center">
+                            </a>
+                            <div className="project-details">
                                 <h3 className="project-card-title">Cleaning Service</h3>
                                 <p className="project-card-desc">Elegant service business website optimizing lead generation through clear structure and a trustworthy aesthetic.</p>
-                                <div className="project-actions project-buttons justify-center">
+                                <div className="project-actions project-buttons">
                                     <button 
                                         className="btn-outline"
                                         onClick={() => openProjectModal('cleaningservice')}
@@ -687,6 +726,45 @@ export default function App() {
                                     <a 
                                         className="btn-primary" 
                                         href="https://nine13.site/cleaningservice" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                    >
+                                        Visit Website <span className="material-symbols-outlined ml-1.5 text-sm">arrow_forward</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Project 6: Georgian Institute of Psychosynthesis */}
+                        <div className="project-card reveal-on-scroll">
+                            <div className="project-bar">
+                                <div className="dots">
+                                    <div className="dot dot-red"></div>
+                                    <div className="dot dot-yellow"></div>
+                                    <div className="dot dot-green"></div>
+                                </div>
+                            </div>
+                            <a 
+                                href="https://nine13.site/ninokvariani2" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="project-image-box"
+                            >
+                                <img alt="Georgian Institute of Psychosynthesis Website Preview" className="project-img" src="/ninokvariani2.png"/>
+                            </a>
+                            <div className="project-details">
+                                <h3 className="project-card-title">Georgian Institute of Psychosynthesis</h3>
+                                <p className="project-card-desc">Educational and research portal for holistic personal growth and professional psychological development in the Caucasus region.</p>
+                                <div className="project-actions project-buttons">
+                                    <button 
+                                        className="btn-outline"
+                                        onClick={() => openProjectModal('ninokvariani2')}
+                                    >
+                                        Quick Details <span className="material-symbols-outlined ml-1.5 text-sm">info</span>
+                                    </button>
+                                    <a 
+                                        className="btn-primary" 
+                                        href="https://nine13.site/ninokvariani2" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                     >

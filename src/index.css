@@ -726,6 +726,7 @@ body {
 .dot-green { background-color: rgba(120, 112, 106, 0.5); }
 
 .project-image-box {
+  display: block;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
